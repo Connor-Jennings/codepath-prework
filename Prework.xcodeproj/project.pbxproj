@@ -35,6 +35,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9F7DA7F7279F368000421B0D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9F8A1155279B75AB00FAE552 /* Prework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8A1158279B75AB00FAE552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +150,7 @@
 				9F8A1151279B75AB00FAE552 /* Sources */,
 				9F8A1152279B75AB00FAE552 /* Frameworks */,
 				9F8A1153279B75AB00FAE552 /* Resources */,
+				9F7DA7F7279F368000421B0D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);

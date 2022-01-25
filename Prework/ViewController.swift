@@ -21,9 +21,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // Retrieve last value
+        if UserDefaults.standard.float(forKey: "billAmount") != 0.0{
+            billAmountTextField.text = String(UserDefaults.standard.float(forKey: "billAmount"))
+        }
+        billAmountTextField.becomeFirstResponder()
     }
     
-
+    
 
     @IBAction func calculateTip(_ sender: Any) {
         // get bill amount from text field input
@@ -38,6 +43,9 @@ class ViewController: UIViewController {
         tipAmountLabel.text = String(format: "$%.2f", tip)
         // update total amount label
         totalLabel.text = String(format: "$%.2f", total)
+        
+        // save value
+        UserDefaults.standard.set(Float(billAmountTextField.text!), forKey: "billAmount")
         
     }
     
